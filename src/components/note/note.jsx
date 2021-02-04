@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './note.css';
 
-const Note = () => {
-  return <div className="note">{this.props.text}</div>;
-};
+class Note extends Component {
+  render() {
+    return (
+      <div className="note" onClick={this.props.deleteMethod}>
+        {this.props.text}
+      </div>
+    );
+  }
+}
 
 export default Note;
