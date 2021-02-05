@@ -50,7 +50,7 @@ class App extends Component {
     });
     return (
       <div className="App">
-        <div className="header">To-Do List</div>
+        <div className="header">Notes</div>
         {notes}
         <div className="btn" onClick={this.addNote.bind(this)}>
           +
