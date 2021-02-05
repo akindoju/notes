@@ -26,7 +26,7 @@ class App extends Component {
 
   deleteNote = (i) => {
     let noteArr = this.state.notes;
-    noteArr.splice(i, 0);
+    noteArr.splice(i, 1);
     this.setState({ notes: noteArr });
   };
 
@@ -56,9 +56,9 @@ class App extends Component {
           +
         </div>
         <input
-          ref={(input) => {
-            this.textInput = input;
-          }}
+          // ref={(input) => {
+          //   this.textInput = input;
+          // }}
           className="input"
           placeholder="Input text here"
           type="text"
